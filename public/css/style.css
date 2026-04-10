@@ -1,0 +1,86 @@
+/* public/css/style.css */
+body { 
+    background-color: #000; 
+    color: #f8f9fa; 
+    font-family: 'Oswald', sans-serif; 
+    font-weight: 500; 
+    overflow-x: hidden; 
+}
+.text-yellow { color: #ffcc00 !important; }
+.bg-yellow { background-color: #ffcc00 !important; color: #000; }
+
+h1, h2, h3, .anton { font-family: 'Anton', sans-serif; text-transform: uppercase; letter-spacing: 1px; }
+h1 { font-size: 4.5rem; color: #fff; position: relative; z-index: 3; }
+
+.hero { 
+    height: 95vh; 
+    background-color: #000; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    border-bottom: 8px solid #ffcc00; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.hero::before { 
+    content: ""; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 130%; 
+    height: 130%; 
+    background-image: url('/img/tigre.jpeg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    opacity: 0.18; 
+    z-index: 1; 
+    pointer-events: none; 
+    -webkit-mask-image: radial-gradient(circle, black 40%, transparent 90%); 
+    mask-image: radial-gradient(circle, black 40%, transparent 90%); 
+}
+
+.hero .container { position: relative; z-index: 5; }
+
+.benefit-card { 
+    background: #111; 
+    padding: 30px; 
+    border: 2px solid #222; 
+    height: 100%; 
+    transition: 0.3s; 
+}
+.benefit-card:hover { border-color: #ffcc00; transform: translateY(-5px); }
+.benefit-title { color: #ffcc00; font-size: 1.8rem; margin-bottom: 15px; }
+
+.forja-divider { height: 4px; background-color: #ffcc00; width: 80px; margin: 25px 0; }
+.forja-divider.mx-auto { width: 120px;}
+
+.img-quadro { border: 3px solid #ffcc00; padding: 10px; border-radius: 4px; background: #111; width: 100%;}
+
+.btn-zap { 
+    background-color: #ffcc00; 
+    color: #000; 
+    font-weight: bold; 
+    padding: 22px 45px; 
+    border-radius: 4px; 
+    text-decoration: none; 
+    font-size: 1.5rem; 
+    text-transform: uppercase; 
+    font-family: 'Anton', sans-serif; 
+    transition: 0.3s; 
+    box-shadow: 0 0 25px rgba(255, 204, 0, 0.3); 
+    letter-spacing: 2px; 
+    display: inline-block; 
+}
+.btn-zap:hover { background-color: #fff; transform: translateY(-3px); box-shadow: 0 0 40px rgba(255, 204, 0, 0.5);}
+
+.social-link { 
+    color: #ffcc00; 
+    font-size: 1.2rem; 
+    text-decoration: none; 
+    transition: 0.3s; 
+}
+.social-link:hover { color: #fff; }
